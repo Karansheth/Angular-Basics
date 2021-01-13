@@ -1,0 +1,25 @@
+<table border = "3">
+  <tr align="center">
+    <td>Image</td>
+    <td>Product Name</td>
+    <td>Product Code</td>
+    <td>Branch Name</td>
+    <td>Branch Code</td>
+    <td>Shipping Address</td>
+    <td>Details</td>
+  </tr>
+
+  <tr align="center" *ngFor = "let ProductInfo of AllProducts">
+    <td><img src = "assets/{{ProductInfo.Image}}" width="200" height="200"></td>
+    <td>{{ProductInfo.ProductName}}</td>
+    <td>{{ProductInfo.ProductCode}}</td>
+    <td>{{ProductInfo.BranchName}}</td>
+    <td>{{ProductInfo.BranchCode}}</td>
+    <td>{{ProductInfo.ShippingAddress}}</td>
+    <td>
+      <button align = 'center' style="background-color: yellow;color:red; width:150px;
+      height:60px;" (click)="GetProductDetail(ProductInfo.ProductName, ProductInfo.ProductCode, ProductInfo.BranchName, ProductInfo.BranchCode, ProductInfo.ShippingAddress)"> Product Detail </button>
+    </td>
+  </tr>
+
+</table>
