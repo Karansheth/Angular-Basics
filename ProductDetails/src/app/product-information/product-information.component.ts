@@ -15,6 +15,7 @@ export class ProductInformationComponent implements OnInit {
   BranchNames: string[] = [];
   BranchCodes: number[] = [];
   ShippingAddresses: string[] = [];
+  Search: string = '';
 
   public AllProducts !: Product[];
   constructor(private ProductInfo: ProductInfoService) { }
