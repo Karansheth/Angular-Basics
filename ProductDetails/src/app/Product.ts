@@ -1,9 +1,9 @@
 export class Product
 {
-  Image: string = '';
-  ProductName: string = '';
-  ProductCode: string = '';
-  BranchName: string = '';
-  BranchCode: number = 0;
-  ShippingAddress: string = '';
+  image: string = '';
+  productName: string = '';
+  productCode: string = '';
+  branchName: string = '';
+  branchCode: number = 0;
+  shippingAddress: string = '';
 }

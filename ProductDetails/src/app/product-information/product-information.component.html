@@ -1,6 +1,6 @@
-<input align="center" placeholder="Two Way Binding" [(ngModel)] = "Search" (keyup-enter)="Search">
+<input align="center" placeholder="Two Way Binding" [(ngModel)] = "search" (keyup-enter)="search">
 <br>
-<label align="center">{{Search}}</label>
+<label align="center">{{search}}</label>
 
 <table border = "3">
   <tr align="center">
@@ -14,15 +14,18 @@
   </tr>
 
   <tr align="center" *ngFor = "let ProductInfo of AllProducts">
-    <td><img src = "assets/{{ProductInfo.Image}}" width="200" height="200"></td>
-    <td>{{ProductInfo.ProductName}}</td>
-    <td>{{ProductInfo.ProductCode}}</td>
-    <td>{{ProductInfo.BranchName}}</td>
-    <td>{{ProductInfo.BranchCode}}</td>
-    <td>{{ProductInfo.ShippingAddress}}</td>
+    <td><img src = "assets/{{ProductInfo.image}}" width="200" height="200"></td>
+    <td>{{ProductInfo.productName}}</td>
+    <td>{{ProductInfo.productCode}}</td>
+    <td>{{ProductInfo.branchName}}</td>
+    <td>{{ProductInfo.branchCode}}</td>
+    <td>{{ProductInfo.shippingAddress}}</td>
     <td>
       <button align = 'center' style="background-color: yellow;color:red; width:150px;
-      height:60px;" (click)="GetProductDetail(ProductInfo.ProductName, ProductInfo.ProductCode, ProductInfo.BranchName, ProductInfo.BranchCode, ProductInfo.ShippingAddress)"> Product Detail </button>
+      height:60px;" (click)="getProductDetail(ProductInfo.productName, ProductInfo.productCode,
+      ProductInfo.branchName, ProductInfo.branchCode, ProductInfo.shippingAddress)">
+        Product Detail
+      </button>
     </td>
   </tr>
 
