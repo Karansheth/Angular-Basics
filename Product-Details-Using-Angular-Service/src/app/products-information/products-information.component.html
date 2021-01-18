@@ -1,0 +1,18 @@
+<table border = "3">
+  <tr align="center">
+    <th>Product Name</th>
+    <th>Product Code</th>
+    <th>Branch Name</th>
+    <th>Branch Code</th>
+    <th>Shipping Address</th>
+  </tr>
+
+  <tr align="center" *ngFor = "let productInfo of products">
+    <td>{{productInfo.productName}}</td>
+    <td>{{productInfo.productCode}}</td>
+    <td>{{productInfo.branchName}}</td>
+    <td>{{productInfo.branchCode}}</td>
+    <td>{{productInfo.shippingAddress}}</td>
+  </tr>
+
+</table>

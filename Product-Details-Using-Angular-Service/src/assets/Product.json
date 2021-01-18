@@ -1,0 +1,37 @@
+[
+  {
+    "productName" : "iphone11",
+    "productCode" : "P6743",
+    "branchName" : "iTronics",
+    "branchCode" : 10752,
+    "shippingAddress" : "Arushi Bunglows"
+  },
+  {
+    "productName" : "Dell XPS 15",
+    "productCode" : "P84738",
+    "branchName" : "Dell Exclusive Store",
+    "branchCode" : 848547,
+    "shippingAddress" : "Shefali Flats"
+  },
+  {
+    "productName" : "Philips Trimmer",
+    "productCode" : "P4367",
+    "branchName" : "Light Lounge",
+    "branchCode" : 434845,
+    "shippingAddress" : "Satyam SKyline"
+  },
+  {
+    "productName" : "LG Refrigerator",
+    "productCode" : "P3923487",
+    "branchName" : "Mudit Refrigerator",
+    "branchCode" : 48374,
+    "shippingAddress" : "Hastiraj Society"
+  },
+  {
+    "productName" : "BMW",
+    "productCode" : "P3728732",
+    "branchName" : "BMW Gallops Autohouse",
+    "branchCode" : 8473847,
+    "shippingAddress" : "New Samrat Society"
+  }
+]
