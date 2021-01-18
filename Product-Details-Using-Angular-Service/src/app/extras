@@ -15,9 +15,6 @@
 </td>
 
 
-<td>
-      <button align = 'center' style="background-color: yellow;color:red; width:150px;
-      height:60px;" (click)="deleteProduct(productInfo)">
-        Delete
-      </button>
-</td>
+  deleteProduct(prodCode) {
+    return this.http.delete('/assets/Product.json' + '/' + prodCode);
+  }

@@ -17,8 +17,5 @@ export class PostService {
     return this.http.post('/assets/Product.json', JSON.stringify(post))
   }
 
-  deleteProduct(prodCode) {
-    return this.http.delete('/assets/Product.json' + '/' + prodCode);
-  }
 
 }
