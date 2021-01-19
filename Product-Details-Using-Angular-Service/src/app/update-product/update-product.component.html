@@ -1,0 +1,26 @@
+<app-products-information (updateProductEvent)="getOriginalProductInformation($event)"></app-products-information>
+
+<form id="productform">
+  <label><b>&nbsp; Product Name: &nbsp;</b></label>
+  <input type="text" name="productName" value= {{originalProductName}} readonly style="background-color: rgb(194, 183, 183);"/>
+  <br/><br/>
+
+  <label><b>&nbsp; Product Code: &nbsp;</b></label>
+  <input type="text" name="productCode" value = {{originalProductCode}} readonly style="background-color: rgb(194, 183, 183);"/>
+  <br/><br/>
+
+  <label><b>&nbsp; Branch Name: &nbsp;</b></label>
+  <input type="text" name="branchName" value = {{originalBranchName}}/>
+  <br/><br/>
+
+  <label><b>&nbsp; Branch Code: &nbsp;</b></label>
+  <input type="text" name="branchCode" value = {{originalBranchCode}}/>
+  <br/><br/>
+
+  <label><b>&nbsp; Shipping Address: &nbsp;</b></label>
+  <input type="text" name="shippingAddress" value = {{originalShippingAddress}}/>
+  <br/><br/>
+
+  <button type="submit" (click)="updateProduct()">Update</button>
+
+</form>

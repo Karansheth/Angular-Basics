@@ -13,9 +13,4 @@ export class PostService {
     return this.http.get('/assets/Product.json');
   }
 
-  addProduct(post) {
-    return this.http.post('/assets/Product.json', JSON.stringify(post))
-  }
-
-
 }

@@ -17,7 +17,7 @@ export class AddProductComponent implements OnInit {
   ngOnInit(): void {
     this.newProduct = new Product();
   }
-  createPost() {
+  createProduct() {
     let post = {
      productName : this.newProduct.productName,
      productCode : this.newProduct.productCode,
@@ -25,12 +25,9 @@ export class AddProductComponent implements OnInit {
      branchCode : this.newProduct.branchCode,
      shippingAddress : this.newProduct.shippingAddress
     }
-    this.service.addProduct(post).subscribe(
-      (response : any) => {
-        this.products.splice(0, 0, post);
-          console.log(response);
-      }
-    )
+    console.log("Added product Information: " + "\nProduct Name: " + post.productName +
+    "\nProduct Code: " + post.productCode + "\nBranch Name: " + post.branchName +
+    "\nBranch Code: " + post.branchCode + "\nShipping Address: " + post.shippingAddress);
   }
 
 

@@ -5,6 +5,8 @@
     <th>Branch Name</th>
     <th>Branch Code</th>
     <th>Shipping Address</th>
+    <th>Update</th>
+    <th>Delete</th>
   </tr>
 
   <tr align="center" *ngFor = "let productInfo of products">
@@ -13,6 +15,22 @@
     <td>{{productInfo.branchName}}</td>
     <td>{{productInfo.branchCode}}</td>
     <td>{{productInfo.shippingAddress}}</td>
+    <td>
+      <a routerLinkActive="active current" routerLink="/update-product">
+        <button align = 'center' style="background-color: yellow;color:red; width:150px;
+          height:60px;" (click) = "updateSelectedProduct(productInfo.productName, productInfo.productCode,
+      productInfo.branchName, productInfo.branchCode, productInfo.shippingAddress)">
+          Update
+        </button>
+      </a>
+    </td>
+    <td>
+      <button align = 'center' style="background-color: yellow;color:red; width:150px;
+      height:60px;" (click)="deleteProduct(productInfo.productName, productInfo.productCode,
+      productInfo.branchName, productInfo.branchCode, productInfo.shippingAddress)">
+        Delete
+      </button>
+    </td>
   </tr>
 
 </table>
